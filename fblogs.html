@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Blog Section</title>
+
+  <!-- Font Awesome for comment icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #ddd;
+    }
+
+    .blog-wrapper {
+      padding: 7em 1em;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .blog-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .blog-heading h2 {
+      font-size: 40px;
+      color: #fff;
+    }
+
+    .blog-heading p {
+      max-width: 550px;
+      margin: 10px auto;
+      color: #aaa;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .blog-card {
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .blog-content {
+      padding: 20px;
+    }
+
+    .blog-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 16px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .blog-meta a {
+      color: #bbb;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .blog-meta a:hover {
+      text-decoration: underline;
+    }
+
+    .blog-title {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+
+    .blog-title a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .blog-title a:hover {
+      text-decoration: underline;
+    }
+
+    .blog-content p {
+      color: #aaa;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Adjust heading font-size on small screens */
+    @media (max-width: 600px) {
+      .blog-heading h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Blog Section -->
+  <section class="blog-wrapper">
+    <div class="blog-heading">
+      <h2 data-translate="blog_title">RECENT FROM BLOGS</h2>
+      <p data-translate="blog_subtitle">
+        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+      </p>
+    </div>
+
+    <div class="blog-grid">
+
+      <div class="blog-card">
+        <div class="blog-image"
+          style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfyoKViBkVrrJeNumW8d3l3x5lJgJvRx64CA&s');">
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <a href="#">Satynaam Traders and industries</a>
+            <a href="#"><i class="fa-regular fa-comment-dots"></i> 3</a>
+          </div>
+          <h3 class="blog-title">
+            <a href="#" data-translate="blog1_title">🌿 A Legacy Rooted in Soil</a>
+          </h3>
+          <p data-translate="blog1_desc">
+            Peanuts — or as we fondly call them, moongphali — are more than just a snack. They are a powerhouse of protein, a farmer's pride, and a symbol of our rich agrarian heritage.
+          </p>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-image"
+          style="background-image: url('https://images.healthshots.com/healthshots/en/uploads/2021/12/13141209/peanuts-1600x900.jpg');">
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <a href="#">Satynaam Traders and industries</a>
+            <a href="#"><i class="fa-regular fa-comment-dots"></i> 3</a>
+          </div>
+          <h3 class="blog-title">
+            <a href="#" data-translate="blog2_title">🌾 From Farm to Flavor</a>
+          </h3>
+          <p data-translate="blog2_desc">
+            We work directly with local farmers, ensuring every peanut is grown with care, free from harmful chemicals, and processed with the latest technology while preserving traditional values.
+          </p>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-image"
+          style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrXKkt8YZY6w0oLCUw63KTsAsZuEsHWibOxKpvi5d7k2HbIKdDJ0bdE93ArR6nAjvU6RU&usqp=CAU');">
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <a href="#">Satynaam Traders and industries</a>
+            <a href="#"><i class="fa-regular fa-comment-dots"></i> 3</a>
+          </div>
+          <h3 class="blog-title">
+            <a href="#" data-translate="blog3_title">✔ Why Choose Satynaam Peanuts?</a>
+          </h3>
+          <p data-translate="blog3_desc">
+            ✔ Consistent Quality <br>✔ Affordable Pricing <br>✔ Bulk & Retail Availability <br>✔ Domestic & International Export Support
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
