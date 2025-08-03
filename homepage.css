@@ -1,3 +1,4 @@
+/* BODY STYLES  */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -7,6 +8,7 @@ body {
   color: #ffffff;
 }
 
+/* HEADER STYLES  */
 .site-header {
   width: 100%;
   display: flex;
@@ -23,6 +25,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/*  CAROUSEL INDICATORS  */
 .carousel-indicators [data-bs-target] {
   width: 7px;
   height: 7px;
@@ -41,11 +44,13 @@ body {
     text-align: center; */
 }
 
+/* Active carousel indicator styling */
 .carousel-indicators .active {
   background-color: #d8b175;
   opacity: 0.5;
 }
 
+/*  LOGO  */
 .site-header .logo,
 .navbar-brand {
   font-weight: 600;
@@ -61,6 +66,7 @@ body {
   color: #fff;
 }
 
+/*  BUTTON STYLES */
 
 .btn.btn-primary {
   background: #c49b63;
@@ -113,7 +119,7 @@ body {
   color: #000;
 }
 
-
+/* NAVIGATION STYLES */
 .site-header nav {
   display: flex;
   width: 60vw;
@@ -135,6 +141,7 @@ body {
   color: #c59d5f;
 }
 
+/* Language dropdown styling */
 .translate-dropdown {
   background: #c59d5f;
   color: #fff;
@@ -147,7 +154,7 @@ body {
   margin-right: 20px;
 }
 
-/* On hover */
+/* Dropdown hover  */
 .translate-dropdown:hover {
   opacity: 0.8;
   border: 1px solid #c49b63;
@@ -155,7 +162,7 @@ body {
   color: #c49b63;
 }
 
-/* Mobile responsive tweaks */
+/* Mobile responsive */
 @media (max-width: 768px) {
   .translate-dropdown {
     width: 100%;
@@ -174,7 +181,7 @@ body {
 }
 
 
-/* Hamburger toggle button */
+/*  toggle button */
 .menu-toggle {
   display: none;
   background: none;
@@ -185,6 +192,7 @@ body {
   cursor: pointer;
 }
 
+/* CAROUSEL SLIDES */
 .carousel-item {
   height: 85vh;
   background-size: cover;
@@ -202,6 +210,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 
+/* SLIDER TEXT */
 .slider-text {
   position: absolute;
   top: 50%;
@@ -260,6 +269,7 @@ body {
   min-height: 200px;
 }
 
+/* Left side of footer */
 .footer-left {
   flex: 1;
   background: #000;
@@ -283,6 +293,7 @@ body {
   font-size: 16px;
 }
 
+/* Highlighted footer section */
 .footer-highlight {
   background: #c59d5f;
   color: #fff;
@@ -299,6 +310,7 @@ body {
   margin-bottom: 15px;
 }
 
+/* List of highlights */
 .fresh-list {
   list-style: none;
   padding: 0;
@@ -314,12 +326,11 @@ body {
   content: "🥜 ";
 }
 
+/*  RESPONSIVE HEADER & FOOTER */
 @media (max-width: 768px) {
   .site-header {
     flex-direction: row;
-    /* Make sure it's row */
     justify-content: space-between;
-    /* Spread left & right */
     align-items: center;
     padding: 15px 30px;
     background: #000 !important;
@@ -334,17 +345,12 @@ body {
     margin-left: 0;
     text-align: left;
     width: auto;
-    /* No forced 100% */
-    order: 1;
-    /* Place first */
   }
 
   .menu-toggle {
     display: block;
     margin: 0;
-    /* Remove margin-right override */
     order: 2;
-    /* Place second */
   }
 
   .site-header nav {
@@ -397,12 +403,10 @@ body {
   }
 }
 
-/* // second section discover */
-/* Section padding */
+/* Section for peanut products */
 .peanut-section {
   padding: 80px 0;
   /* background-color: #000; */
-  /* Keep dark background for contrast */
 }
 
 /* Subtitle styling */
@@ -425,9 +429,9 @@ body {
   color: #ffffff;
   text-align: center;
   line-height: 1px;
-  /* Proper line height */
 }
 
+/* Container for discover section */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -445,8 +449,6 @@ body {
   margin: 0 auto 40px auto;
   /* ✅ centers the block element horizontally */
 }
-
-
 
 /* Product Card */
 .product-card {
@@ -547,7 +549,7 @@ body {
   display: block;
 }
 
-/* Responsive typography & layout tweaks */
+/* Responsive */
 @media (max-width: 768px) {
   .section-subtitle {
     font-size: 40px;
@@ -589,15 +591,7 @@ body {
     height: 150px;
   }
 }
-
-/* // third section */
-/* body {
-  margin: 0;
-  background: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-} */
-
+/*  BLOG SECTION  */
 .section {
   display: flex;
   flex-wrap: wrap;
@@ -661,16 +655,10 @@ body {
 }
 
 /* //fourth section */
-/* body {
-  margin: 0;
-  background: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-} */
+
 
 .section {
   display: flex;
-  /* side-by-side layout */
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
@@ -708,7 +696,6 @@ body {
 .images {
   flex: 1 1 400px;
   display: grid;
-  /* ✅ grid for 2×2 */
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 10px;
@@ -797,7 +784,8 @@ body {
   }
 }
 
-/* //sixth section */
+
+ /*  PREMIUM SERVICES SECTION */
 .ftco-section {
   padding: 7em 0;
   height: 400px;
@@ -810,7 +798,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-width: 100%;
+  width: 100%;
   background-color: #c49b63;
 }
 
@@ -872,14 +860,8 @@ width: 100%;
   }
 }
 
-/* //seventh */
-/* body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: #ddd;
-} */
 
+/* Blog wrapper  */
 .blog-wrapper {
   padding: 7em 1em;
   max-width: 1200px;
@@ -948,8 +930,8 @@ width: 100%;
 }
 
 .blog-meta a:hover {
-  text-decoration:none;
-   color: #c49b63;
+  text-decoration: none;
+  color: #c49b63;
 }
 
 .blog-title {
@@ -982,15 +964,8 @@ width: 100%;
   }
 }
 
-/* //eigth */
-/* body {
-  background: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-} */
 
+/*  GALLERY SECTION*/
 .ftco-section_gallery {
   padding: 4em 1em;
   text-align: center;
@@ -1036,6 +1011,7 @@ width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Gallery overlay  */
 .overlay_gallery {
   position: fixed;
   top: 0;
@@ -1059,6 +1035,7 @@ width: 100%;
   display: flex;
 }
 
+/* Close button for gallery overlay */
 .close-btn_gallery {
   position: absolute;
   top: 40px;
@@ -1091,12 +1068,7 @@ width: 100%;
   }
 }
 
-/* //ninth */
-/* body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-} */
-
+/*TESTIMONIAL SECTION  */
 .testimonial-section {
   position: relative;
   padding: 4em 1em;
@@ -1121,15 +1093,6 @@ width: 100%;
   margin: 0 auto;
   text-align: center;
 }
-
-/*
-    .testimonial-header .subtitle {
-      font-size: 60px;
-      color: #ebda9f;
-      font-family: "Great Vibes", cursive;
-      color: darkgoldenrod;
-      line-height: 1px;
-    } */
 
 .subtitle {
   display: block;
@@ -1163,14 +1126,7 @@ width: 100%;
   }
 }
 
-/* //tenth */
-/* body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: #fff;
-} */
-
+/* ABOUT SECTION  */
 .about-section {
   display: flex;
   flex-wrap: wrap;
@@ -1232,13 +1188,7 @@ width: 100%;
   }
 }
 
-/* //eleventh */
-/* body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #000;
-  color: #eee;
-} */
+/*  CONTACT SECTION */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -1249,7 +1199,6 @@ body {
 }
 
 .contact-section {
-  /* background: #000; */
   padding: 50px 20px;
   text-align: center;
 }
@@ -1328,21 +1277,16 @@ iframe {
   border: 0;
 }
 
-/* //twelve */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+/*  FOOTER SECTION  */
 
 body {
-   
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      overflow-x: hidden;
-      background: url('https://himanshufullstackdeveloper.github.io/satynaamtraders/images/bg_4.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #ffffff;
+
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background: url('https://himanshufullstackdeveloper.github.io/satynaamtraders/images/bg_4.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
 
 }
 
@@ -1383,7 +1327,7 @@ body {
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
 }
-
+/* Gallery items in footer */
 .gallery-item {
   display: flex;
   align-items: center;
@@ -1404,7 +1348,7 @@ body {
   color: rgba(255, 255, 255, 0.8);
   max-width: 180px;
 }
-
+/* Footer links  */
 .footer-links {
   list-style: none;
   text-align: left;

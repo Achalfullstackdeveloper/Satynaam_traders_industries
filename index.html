@@ -12,23 +12,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <!-- Page Title -->
   <title data-translate="title"> 🥜 Satynam Traders And Industries</title>
   <link rel="stylesheet" href="homepage.css">
 
 </head>
 
 <body>
+  <!-- HEADER SECTION-->
   <header class="site-header">
+    <!-- Logo and Name -->
     <a class="navbar-brand" href="index.html">
       🥜 <span data-translate="brand">SATYNAAM</span><br>
       <small style="font-size:14px; color:rgb(254, 254, 254);margin-left: 40px;letter-spacing: 5px;"
         data-translate="brand_sub">TRADERS</small>
     </a>
 
-    <!-- Hamburger toggle -->
+    <!--  toggle -->
     <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
-
+    <!-- Navigation Links -->
     <nav>
       <a href="#heroCarousel" class="nav-link" data-translate="nav_home" style="color: rgb(180, 152, 91);">Home</a>
       <a href="#menusection" class="nav-link" data-translate="nav_menu">Menu</a>
@@ -38,7 +40,7 @@
       <a href="#about" class="nav-link" data-translate="nav_about">About</a>
       <a href="#gallery" class="nav-link" data-translate="nav_gallery">Gallery</a>
       <a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a>
-
+      <!-- Language Dropdown -->
       <select class="translate-dropdown" onchange="translateTo(this.value)">
         <option value="en">English</option>
         <option value="hi">Hindi</option>
@@ -100,7 +102,7 @@
       </div>
     </div>
 
-    <!-- Optional: slide indicators -->
+    <!-- Carousel indicators -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
@@ -111,22 +113,25 @@
   <!-- FOOTER SECTION -->
   <footer class="footer">
     <div class="footer-left">
+      <!-- Contact Info -->
       <div class="footer-box">
         <strong><i class="fas fa-phone" style="color: rgb(218, 191, 108);"></i> +91 87882 09773</strong>
         <span data-translate="footer_line1">Peanuts: the humble snack with a superfood punch.</span>
       </div>
+      <!-- Address Info -->
       <div class="footer-box">
         <strong><i class="fa-solid fa-location-crosshairs" style="color: rgb(218, 191, 108);"></i> <span
             data-translate="footer_address_title"> Rohana, Bus Stand</span></strong>
         <span data-translate="footer_address">Maharashtra 441305, India</span>
       </div>
+      <!-- Hours Info -->
       <div class="footer-box">
         <strong><i class="fa-regular fa-clock" style="color: rgb(218, 191, 108);"></i> <span
             data-translate="footer_hours_title"> Open Monday‑Friday</span></strong>
         <span data-translate="footer_hours">8:00 am – 9:00 pm</span>
       </div>
     </div>
-
+    <!-- Highlights -->
     <div class="footer-highlight">
       <strong data-translate="footer_fresh">FRESH PEANUTS</strong>
       <ul class="fresh-list">
@@ -138,7 +143,7 @@
     </div>
   </footer>
   <br><br>
-  <!-- second section discover -->
+  <!-- DISCOVER SECTION -->
   <section class="peanut-section" id="menusection">
     <div class="container">
       <span class="section-subtitle" data-translate="discover">Discover</span>
@@ -158,6 +163,7 @@
           <h3 class="product-title" data-translate="white_peanuts">White Peanuts</h3>
           <p class="product-desc" data-translate="white_peanuts_desc">Blanched or skinned peanuts</p>
           <p class="product-price" data-translate="white_peanuts_price">₹3,500 / 50kg</p>
+          <!-- Order Button -->
           <a href="tel:9545966656" class="product-btn" data-translate="order_btn">Order</a>
         </div>
 
@@ -168,6 +174,7 @@
           <h3 class="product-title" data-translate="red_skin_peanuts">Red Skin Peanuts</h3>
           <p class="product-desc" data-translate="red_skin_peanuts_desc">Regular raw peanuts with skin</p>
           <p class="product-price" data-translate="red_skin_peanuts_price">₹5,000 / 50kg</p>
+          <!-- Order Button -->
           <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
         </div>
 
@@ -178,6 +185,7 @@
           <h3 class="product-title" data-translate="raw_in_shell">Raw In-Shell Peanuts</h3>
           <p class="product-desc" data-translate="raw_in_shell_desc">Whole peanuts in shell</p>
           <p class="product-price" data-translate="raw_in_shell_price">₹3,000 / 50kg</p>
+          <!-- Order Button -->
           <a href="tel:9545966656" class="product-btn" data-translate="order_btn">Order</a>
         </div>
 
@@ -189,6 +197,7 @@
           <h3 class="product-title" data-translate="roasted_in_shell">Roasted In-Shell Peanuts</h3>
           <p class="product-desc" data-translate="roasted_in_shell_desc">Whole peanuts in shell</p>
           <p class="product-price" data-translate="roasted_in_shell_price">₹3,000 / 50kg</p>
+          <!-- Order Button -->
           <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
         </div>
       </div>
@@ -196,7 +205,7 @@
   </section>
   <br><br>
   <br><br><br>
-  <!-- //third section -->
+  <!-- PRODUCTS SECTION -->
   <section class="product-section" id="services">
     <div class="container">
 
@@ -208,7 +217,7 @@
         texts.
       </p>
       <br>
-      <!-- Tabs -->
+      <!-- Tabs  for Peanuts and Groundnuts-->
       <div class="tab-buttons">
         <button class="tab-btn active" onclick="showTab('peanuts')" data-translate="tab_peanuts">Peanuts</button>
         <button class="tab-btn" onclick="showTab('groundnuts')" data-translate="tab_groundnuts">Groundnuts</button>
@@ -227,6 +236,7 @@
               <h3 class="product-title" data-translate="peanuts">Peanuts</h3>
               <p class="product-desc" data-translate="peanuts_desc1">More Superior Raw Peanuts, 500g Pouch</p>
               <p class="product-price" data-translate="peanuts_price1">₹5,900 / 50 kg</p>
+              <!-- Order Button -->
               <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
             </div>
 
@@ -239,6 +249,7 @@
               <p class="product-desc" data-translate="peanuts_desc2">Organic Tattva, Organic Raw Unpolished
                 Peanuts/Groundnuts, 500g</p>
               <p class="product-price" data-translate="peanuts_price2">₹5,500 / 50 kg</p>
+              <!-- Order Button -->
               <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
             </div>
 
@@ -250,6 +261,7 @@
               <p class="product-desc" data-translate="red_peanuts_desc">Desire Raw Peanuts | 1Kg | Premium Moongfali |
                 Vacuum Packed</p>
               <p class="product-price" data-translate="red_peanuts_price">₹5,300 / 50 kg</p>
+              <!-- Order Button -->
               <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
             </div>
 
@@ -261,6 +273,7 @@
               <p class="product-desc" data-translate="red_peanuts_desc">Desire Raw Peanuts | 1Kg | Premium Moongfali |
                 Vacuum Packed</p>
               <p class="product-price" data-translate="red_peanuts_price">₹5,300 / 50 kg</p>
+              <!-- Order Button -->
               <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
             </div>
 
@@ -272,6 +285,7 @@
               <p class="product-desc" data-translate="red_peanuts_desc">Desire Raw Peanuts | 1Kg | Premium Moongfali |
                 Vacuum Packed</p>
               <p class="product-price" data-translate="red_peanuts_price">₹5,300 / 50 kg</p>
+              <!-- Order Button -->
               <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
             </div>
 
@@ -283,6 +297,7 @@
               <p class="product-desc" data-translate="red_peanuts_desc">Desire Raw Peanuts | 1Kg | Premium Moongfali |
                 Vacuum Packed</p>
               <p class="product-price" data-translate="red_peanuts_price">₹5,300 / 50 kg</p>
+              <!-- Order Button -->
               <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
             </div>
           </div>
@@ -295,6 +310,7 @@
   <!-- Groundnuts Tab -->
   <div class="tab-pane" id="groundnuts">
     <div class="row">
+      <!-- Groundnuts Product Card 1 -->
       <div class="col-md-4 ">
         <img src="https://fattaak.in/cdn/shop/files/1_7bb8d5f4-dcb0-4630-a8a6-79bd71473531.jpg?v=1737356400"
           alt="Groundnuts" class="product-img">
@@ -302,9 +318,10 @@
         <p class="product-desc" data-translate="groundnuts_desc1">Organic Tattva, Organic Raw Unpolished
           Peanuts/Groundnuts, 500g</p>
         <p class="product-price" data-translate="groundnuts_price1">₹3,300 / 50 kg</p>
+        <!-- Order Button -->
         <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
       </div>
-
+      <!-- Groundnuts Product Card 2 -->
       <div class="col-md-4">
         <img src="https://m.media-amazon.com/images/I/41RoBZdJ+iL._AC_UF1000,1000_QL80_.jpg" alt="Groundnuts"
           class="product-img">
@@ -312,9 +329,10 @@
         <p class="product-desc" data-translate="groundnuts_desc2">Groundnuts(Raw)| 500gms |A1 grade| 100% Natural
           Moongfali/Peanuts</p>
         <p class="product-price" data-translate="groundnuts_price2">₹4,500 / 50 kg</p>
+        <!-- Order Button-->
         <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
       </div>
-
+      <!-- Groundnuts Product Card 3 -->
       <div class="col-md-4">
         <img src="https://benisonmedia.com/wp-content/uploads/2023/07/groundnut-min.jpg" alt="Groundnuts"
           class="product-img">
@@ -322,6 +340,7 @@
         <p class="product-desc" data-translate="groundnuts_desc3">Native Variety Groundnuts(Raw)| 500gms |A1 grade| 100%
           Natural</p>
         <p class="product-price" data-translate="groundnuts_price3">₹3,100 / 50 kg</p>
+        <!-- Order Button-->
         <a href="tel:9545966656 " class="product-btn" data-translate="order_btn">Order</a>
       </div>
     </div>
@@ -330,7 +349,7 @@
   </div>
   </section>
   <br><br><br><br><br><br><br><br><br><br><br>
-  <!-- //forth section -->
+  <!-- BLOG SECTION -->
   <section class="section" id="blog">
     <div class="content"><br><br><br><br><br><br><br><br>
       <span data-translate="discover">Discover</span>
@@ -341,7 +360,7 @@
         and we continue to uphold these values in everything we do.
       </p>
     </div>
-
+    <!-- Menu Images -->
     <div class="images">
       <div class="image1">
         <img
@@ -360,7 +379,7 @@
     </div>
   </section>
   <br><br><br><br><br><br><br>
-  <!-- //fifth section -->
+  <!--  ABOUT SECTION  -->
 
   <section class="ftco-about" id="about">
     <div class="about-half img"
@@ -391,7 +410,7 @@
     <br>
     <br><br>
 
-    <!-- //sixth section -->
+    <!--  PREMIUM SERVICES SECTION -->
     <div class="row-premium">
       <!-- Premium Peanuts -->
       <div class="services">
@@ -424,9 +443,8 @@
     </div>
 
   </section>
-<br><br><br><br><br>
-  <!-- //seventh -->
-  <!-- Blog Section -->
+  <br><br><br><br><br>
+  <!-- BLOG WRAPPER SECTION -->
   <section class="blog-wrapper">
     <div class="blog-heading">
       <h2 data-translate="blog_title">RECENT FROM BLOGS</h2>
@@ -437,7 +455,7 @@
     </div>
 
     <div class="blog-grid">
-
+      <!-- Blog Card 1 -->
       <div class="blog-card">
         <div class="blog-image"
           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfyoKViBkVrrJeNumW8d3l3x5lJgJvRx64CA&s');">
@@ -456,7 +474,7 @@
           </p>
         </div>
       </div>
-
+      <!-- Blog Card 2 -->
       <div class="blog-card">
         <div class="blog-image"
           style="background-image: url('https://images.healthshots.com/healthshots/en/uploads/2021/12/13141209/peanuts-1600x900.jpg');">
@@ -475,7 +493,7 @@
           </p>
         </div>
       </div>
-
+      <!-- Blog Card 3 -->
       <div class="blog-card">
         <div class="blog-image"
           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrXKkt8YZY6w0oLCUw63KTsAsZuEsHWibOxKpvi5d7k2HbIKdDJ0bdE93ArR6nAjvU6RU&usqp=CAU');">
@@ -499,12 +517,13 @@
 
     </div>
   </section>
-  <!-- //eight -->
+  <!-- GALLERY SECTION -->
   <section class="ftco-section_gallery" id="gallery">
     <h2 data-translate="gallery_title">Our Store Gallery</h2>
     <p data-translate="gallery_desc">A glimpse of our premium peanut products and facilities.</p>
 
     <div class="row_gallery">
+      <!-- Gallery Images -->
       <div class="col_gallery">
         <a href="#img1"><img
             src="https://www.thespruceeats.com/thmb/ROY5uTtTUDHM6hCDTfshDNyQlcg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oven-roasted-peanuts-4172872-step-01-7548c7aae0e849a8b5a368d985caba2d.jpg"
@@ -546,7 +565,7 @@
       </div>
     </div>
 
-    <!-- Overlays -->
+    <!-- Gallery Overlays -->
     <div id="img1" class="overlay_gallery"><a href="#" class="close-btn_gallery">&times;</a><img
         src="https://www.thespruceeats.com/thmb/ROY5uTtTUDHM6hCDTfshDNyQlcg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oven-roasted-peanuts-4172872-step-01-7548c7aae0e849a8b5a368d985caba2d.jpg"
         alt=""></div>
@@ -568,7 +587,7 @@
         src="https://www.jiomart.com/images/product/original/490198099/loose-raw-peanuts-1-kg-product-images-o490198099-p490198099-0-202503281246.jpg?im=Resize=(420,420)"
         alt=""></div>
   </section>
-  <!-- //ninth -->
+  <!-- TESTIMONIAL SECTION -->
   <br><br>
   <div class="black" style="background-color: rgb(16, 16, 16);">
     <section class="testimonial-section"
@@ -587,7 +606,7 @@
       </div>
   </div>
   </section><br><br><br><br>
-  <!-- //tenth -->
+  <!-- SHOP TIMING SECTION-->
   <section class="about-section" id="about-time">
     <div class="about-half img-side"
       style="background-image: url('https://thumbs.dreamstime.com/b/burlap-sack-full-shelled-peanuts-loose-pods-surrounding-textile-bag-29944726.jpg');">
@@ -614,20 +633,21 @@
       </div>
     </div>
   </section><br><br>
-  <!-- //eleventh -->
+  <!-- CONTACT SECTION -->
   <section class="contact-section" id="contact">
     <div class="contact-content">
       <h2 data-translate="contact_heading">Contact Us</h2>
       <p data-translate="contact_subtitle">Get in touch with us anytime.</p>
 
       <div class="contact-cards">
+        <!-- Phone -->
         <div class="contact-card">
           <img src="https://www2.ifam.edu.br/campus/eirunepe/arquivos/telefone-icon.png/@@images/image.png"
             alt="Phone" />
           <h3 data-translate="contact_phone_heading">Call Us On</h3>
           <a href="tel:+919545966656" data-translate="contact_phone_number">+91 9545966656</a>
         </div>
-
+        <!-- Email-->
         <div class="contact-card">
           <img
             src="https://static.vecteezy.com/system/resources/previews/053/337/249/non_2x/green-gradient-home-solid-circle-icon-free-png.png"
@@ -636,7 +656,7 @@
           <a href="mailto:satynaamtrader@gmail.com" class="small"
             data-translate="contact_email_address">satynaamtrader@gmail.com</a>
         </div>
-
+        <!-- Location-->
         <div class="contact-card">
           <img src="https://cdn.creazilla.com/cliparts/75230/location-icon-clipart-lg.png" alt="Location" />
           <h3 data-translate="contact_location_heading">Find Us</h3>
@@ -646,6 +666,7 @@
           </a>
         </div>
       </div>
+      <!-- Google Map-->
       <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3929.0782827672338!2d78.4745935!3d21.3436876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd451005f264f85%3A0xc37c8b5513169c7e!2sSatynaam%20traders%20industry!5e1!3m2!1sen!2sin!4v1751556961761!5m2!1sen!2sin"
@@ -653,19 +674,19 @@
       </div>
     </div>
   </section>
-  <!-- //twelve -->
+  <!-- FOOTER SECTION  -->
   <footer class="ftco-footer">
     <div class="container">
       <div class="footer-row">
 
-        <!-- About -->
+        <!-- About Footer Box -->
         <div class="footer-box">
           <h2 data-translate="footer_about_heading">About Us</h2>
           <p data-translate="footer_about_text">At our company, we pride ourselves on offering the highest quality
             peanuts and nut-based products.</p>
         </div>
 
-        <!-- Gallery -->
+        <!-- Gallery Footer Box -->
         <div class="footer-box">
           <h2 data-translate="footer_gallery_heading">Gallery</h2>
           <div class="gallery-item">
@@ -682,7 +703,7 @@
           </div>
         </div>
 
-        <!-- Services -->
+        <!-- Services Footer Box -->
         <div class="footer-box">
           <h2 data-translate="footer_services_heading">Services</h2>
           <ul class="footer-links">
@@ -693,25 +714,26 @@
           </ul>
         </div>
 
-        <!-- Contact -->
+        <!-- Contact Footer Box -->
         <div class="footer-box">
           <h2 data-translate="footer_contact_heading">Have a Questions?</h2>
           <ul class="footer-contact" style="text-align: left;">
             <li><i class="fas fa-map-marker-alt"></i> <span data-translate="footer_address">Rohana near bus stand,
                 441305</span></li>
             <li><i class="fas fa-phone"></i> <span data-translate="footer_phone">+91 9545966656</span></li>
-            <li><i class="fas fa-envelope"></i> <span data-translate="footer_email">satynaamtrader<br>@gmail.com</span></li>
+            <li><i class="fas fa-envelope"></i> <span data-translate="footer_email">satynaamtrader<br>@gmail.com</span>
+            </li>
           </ul>
         </div>
 
       </div>
-
+      <!-- Footer Bottom Text -->
       <div class="footer-bottom" data-translate="footer_bottom_text">
         &copy; 2025 All rights reserved | By Satynaam Traders And Industries
       </div>
     </div>
   </footer>
-  <!-- Bootstrap JS Bundle (includes carousel JS)  -->
+  <!-- Bootstrap JS ( carousel JS)  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="homepage.js"></script>
   <script src="style.js"></script>
