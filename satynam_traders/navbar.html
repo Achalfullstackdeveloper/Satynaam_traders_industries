@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Best Peanuts Sellers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.product-section {
+  background-color: black;
+  padding: 80px 0;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #d4d4d4;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section-desc {
+  color: #bbb;
+  font-size: 16px;
+}
+
+.tab-buttons .tab-btn {
+  background: transparent;
+  border: 2px solid #ffc107;
+  color: #ffc107;
+  padding: 8px 20px;
+  margin: 0 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-buttons .tab-btn.active,
+.tab-buttons .tab-btn:hover {
+  background: #ffc107;
+  color: #111;
+}
+
+.product-card {
+  
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+
+}
+
+.product-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+.product-title {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.product-desc {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.product-price {
+  font-weight: bold;
+  margin: 10px 0;
+  color: #ffc107;
+}
+
+.product-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background: transparent;
+  border: 2px solid #ffc107;
+  color: #ffc107;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.product-btn:hover {
+  background: #ffc107;
+  color: #111;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+</head>
+<body>
+
+<section class="product-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8 text-center">
+        <span class="section-subtitle">Discover</span>
+        <h2 class="section-title">Our Products</h2>
+        <p class="section-desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+    </div>
+
+    <div class="tab-buttons text-center mb-4">
+      <button class="tab-btn active" onclick="showTab('peanuts')">Peanuts</button>
+      <button class="tab-btn" onclick="showTab('groundnuts')">Groundnuts</button>
+    </div>
+
+    <div class="tab-content">
+      <!-- Peanuts Tab -->
+      <div class="tab-pane active" id="peanuts">
+        <div class="row g-4">
+          <div class="col-md-4 text-center product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoP6tKTY1Fz_Pv6oizZg9Sm3XnRn5SlHbXg&s" alt="Peanuts" class="product-img">
+            <h3 class="product-title">Peanuts</h3>
+            <p class="product-desc">More Superior Raw Peanuts, 500g Pouch</p>
+            <p class="product-price">₹5,900 / 50 kg</p>
+            <a href="https://wa.me/918788209773" class="product-btn">Order</a>
+          </div>
+
+          <div class="col-md-4 text-center product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRCbfwHr1Uqlr7qjWCAxupJhv0SoJQVYtfnZM6ewIBecvO366oHaMev-tzbuTJdXGWCJg&usqp=CAU" alt="Peanuts" class="product-img">
+            <h3 class="product-title">Peanuts</h3>
+            <p class="product-desc">Organic Tattva, Organic Raw Unpolished Peanuts/Groundnuts, 500g</p>
+            <p class="product-price">₹5,500 / 50 kg</p>
+            <a href="https://wa.me/918788209773" class="product-btn">Order</a>
+          </div>
+
+          <div class="col-md-4 text-center product-card">
+            <img src="https://vbwholefoods.co.uk/cdn/shop/files/raw-peanuts.jpg?v=1731781412" alt="Red Peanuts" class="product-img">
+            <h3 class="product-title">Red Peanuts</h3>
+            <p class="product-desc">Desire Raw Peanuts | 1Kg | Premium Moongfali | Vacuum Packed</p>
+            <p class="product-price">₹5,300 / 50 kg</p>
+            <a href="https://wa.me/918788209773" class="product-btn">Order</a>
+          </div>
+           <div class="col-md-4 text-center product-card">
+            <img src="https://vbwholefoods.co.uk/cdn/shop/files/raw-peanuts.jpg?v=1731781412" alt="Red Peanuts" class="product-img">
+            <h3 class="product-title">Red Peanuts</h3>
+            <p class="product-desc">Desire Raw Peanuts | 1Kg | Premium Moongfali | Vacuum Packed</p>
+            <p class="product-price">₹5,300 / 50 kg</p>
+            <a href="https://wa.me/918788209773" class="product-btn">Order</a>
+          </div>
+           <div class="col-md-4 text-center product-card">
+            <img src="https://vbwholefoods.co.uk/cdn/shop/files/raw-peanuts.jpg?v=1731781412" alt="Red Peanuts" class="product-img">
+            <h3 class="product-title">Red Peanuts</h3>
+            <p class="product-desc">Desire Raw Peanuts | 1Kg | Premium Moongfali | Vacuum Packed</p>
+            <p class="product-price">₹5,300 / 50 kg</p>
+            <a href="https://wa.me/918788209773" class="product-btn">Order</a>
+          </div>
+           <div class="col-md-4 text-center product-card">
+            <img src="https://vbwholefoods.co.uk/cdn/shop/files/raw-peanuts.jpg?v=1731781412" alt="Red Peanuts" class="product-img">
+            <h3 class="product-title">Red Peanuts</h3>
+            <p class="product-desc">Desire Raw Peanuts | 1Kg | Premium Moongfali | Vacuum Packed</p>
+            <p class="product-price">₹5,300 / 50 kg</p>
+            <a href="https://wa.me/918788209773" class="product-btn">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Groundnuts Tab -->
+      <div class="tab-pane" id="groundnuts">
+        <div class="row g-4">
+          <div class="col-md-4 text-center product-card">
+            <img src="https://fattaak.in/cdn/shop/files/1_7bb8d5f4-dcb0-4630-a8a6-79bd71473531.jpg?v=1737356400" alt="Groundnuts" class="product-img">
+            <h3 class="product-title">Groundnuts</h3>
+            <p class="product-desc">Organic Tattva, Organic Raw Unpolished Peanuts/Groundnuts, 500g</p>
+            <p class="product-price">₹3,300 / 50 kg</p>
+            <a href="https://wa.me/918788209773" class="product-btn">Order</a>
+          </div>
+
+          <div class="col-md-4 text-center product-card">
+            <img src="https://m.media-amazon.com/images/I/41RoBZdJ+iL._AC_UF1000,1000_QL80_.jpg" alt="Groundnuts" class="product-img">
+            <h3 class="product-title">Groundnuts</h3>
+            <p class="product-desc">Groundnuts(Raw)| 500gms |A1 grade| 100% Natural Moongfali/Peanuts</p>
+            <p class="product-price">₹4,500 / 50 kg</p>
+            <a href="https://wa.me/918788209773" class="product-btn">Order</a>
+          </div>
+
+          <div class="col-md-4 text-center product-card">
+            <img src="https://benisonmedia.com/wp-content/uploads/2023/07/groundnut-min.jpg" alt="Groundnuts" class="product-img">
+            <h3 class="product-title">Groundnuts</h3>
+            <p class="product-desc">Native Variety Groundnuts(Raw)| 500gms |A1 grade| 100% Natural</p>
+            <p class="product-price">₹3,100 / 50 kg</p>
+            <a href="https://wa.me/918788209773" class="product-btn">Order</a>
+          </div>
+        
+
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script >
+    function showTab(tabName) {
+  const tabs = document.querySelectorAll('.tab-pane');
+  const buttons = document.querySelectorAll('.tab-btn');
+
+  tabs.forEach(tab => {
+    tab.classList.remove('active');
+  });
+
+  buttons.forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  document.getElementById(tabName).classList.add('active');
+  event.target.classList.add('active');
+}
+
+</script>
+</body>
+</html>
+

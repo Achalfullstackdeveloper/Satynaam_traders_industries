@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Our Menu</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .section {
+      display: flex; /* side-by-side layout */
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    .content {
+      flex: 1 1 400px;
+      padding: 20px;
+    }
+
+    .content span {
+      display: block;
+      font-size: 32px;
+      color: #d4af37;
+      font-style: italic;
+      text-align: right;
+    }
+
+    .content h2 {
+      font-size: 48px;
+      margin: 10px 0 20px;
+      text-align: right;
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .images {
+      flex: 1 1 400px;
+      display: grid; /* ✅ grid for 2×2 */
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .images div {
+      width: 100%;
+    }
+
+    .images img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #fff;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section">
+    <div class="content"><br><br><br><br><br><br><br><br>
+      <span>Discover</span>
+      <h2>OUR MENU</h2>
+      <p style="text-align: right;">
+        At our company, we pride ourselves on offering the highest quality peanuts and nut-based products.
+        Our journey began with a passion for creating nutritious, delicious, and wholesome snacks,
+        and we continue to uphold these values in everything we do.
+      </p>
+    </div>
+
+    <div class="images">
+      <div class="image1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrM0EIs3sJcESFTIrynF550F-jFYsbiQtuDEYmtbhaF3HgOH1vw2ugSM8I60EWmGbawhc&usqp=CAU" alt="Peanuts 1" />
+      </div>
+      <div class="image2" style="height: 300px;">
+        <img src="https://m.media-amazon.com/images/I/71Oo1hV4GsL._AC_UF1000,1000_QL80_.jpg" alt="Peanuts 2" />
+      </div>
+      <div class="image3">
+        <img src="https://m.media-amazon.com/images/I/71Oo1hV4GsL._AC_UF1000,1000_QL80_.jpg" alt="Peanuts 3" />
+      </div>
+      <div class="image4">
+        <img src="https://m.media-amazon.com/images/I/71Oo1hV4GsL._AC_UF1000,1000_QL80_.jpg" alt="Peanuts 4" />
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peanut Gallery</title>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .peanut-gallery-section {
+      padding: 4em 1em;
+      text-align: center;
+    }
+
+    .peanut-gallery-section h2 {
+      font-size: 40px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .peanut-gallery-section p {
+      color: #5f5f5f;
+      margin-bottom: 2rem;
+    }
+
+    .peanut-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .peanut-col {
+      flex: 1 1 calc(25% - 20px);
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .peanut-img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .peanut-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    /* Unique overlay styles */
+    #peanut-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 99999; /* high so it stays on top */
+    }
+
+    #peanut-overlay img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    #peanut-close {
+      position: absolute;
+      top: 40px;
+      right: 50px;
+      font-size: 40px;
+      color: #fff;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    #peanut-close:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    @media (max-width: 992px) {
+      .peanut-col {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .peanut-col {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <section class="peanut-gallery-section" id="gallery">
+    <h2>Our Store Gallery</h2>
+    <p>A glimpse of our premium peanut products and facilities.</p>
+
+    <div class="peanut-row">
+      <div class="peanut-col"><img src="https://www.thespruceeats.com/thmb/ROY5uTtTUDHM6hCDTfshDNyQlcg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oven-roasted-peanuts-4172872-step-01-7548c7aae0e849a8b5a368d985caba2d.jpg" alt="Groundnut" class="peanut-img" onclick="openPeanutOverlay(this.src)"></div>
+      <div class="peanut-col"><img src="https://www.healthyorganic.in/cdn/shop/products/40094998-2_1-bb-royal-organic-raw-peanuts_2048x.jpg?v=1569850730" alt="Processing Plant" class="peanut-img" onclick="openPeanutOverlay(this.src)"></div>
+      <div class="peanut-col"><img src="https://vatsanfoods.com/adminln/uploads/product-images/1655962451_GroundNut_-_Raw_2.jpg" alt="Shelling Machine" class="peanut-img" onclick="openPeanutOverlay(this.src)"></div>
+      <div class="peanut-col"><img src="https://www.vadiner.com/images/uploads/peanuts-in-bag.jpg" alt="Roasted Groundnuts" class="peanut-img" onclick="openPeanutOverlay(this.src)"></div>
+      <div class="peanut-col"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcMaul9_xkpPDJjctxv_5_ZzvN6Q9qahiTA&s" alt="Groundnut" class="peanut-img" onclick="openPeanutOverlay(this.src)"></div>
+      <div class="peanut-col"><img src="https://5.imimg.com/data5/SELLER/Default/2023/2/MI/XV/LA/125151604/raw-peanut-500x500.jpg" alt="Processing Plant" class="peanut-img" onclick="openPeanutOverlay(this.src)"></div>
+      <div class="peanut-col"><img src="https://images.timesnownews.com/thumb/msid-95253806,thumbsize-40916,width-400,height-225,resizemode-75/95253806.jpg" alt="Shelling Machine" class="peanut-img" onclick="openPeanutOverlay(this.src)"></div>
+      <div class="peanut-col"><img src="https://www.jiomart.com/images/product/original/490198099/loose-raw-peanuts-1-kg-product-images-o490198099-p490198099-0-202503281246.jpg?im=Resize=(420,420)" alt="Roasted Groundnuts" class="peanut-img" onclick="openPeanutOverlay(this.src)"></div>
+    </div>
+
+    <!-- Unique overlay -->
+    <div id="peanut-overlay">
+      <span id="peanut-close" onclick="closePeanutOverlay()">&times;</span>
+      <img id="peanut-overlay-img" src="" alt="">
+    </div>
+  </section>
+
+  <script>
+    function openPeanutOverlay(src) {
+      document.getElementById("peanut-overlay-img").src = src;
+      document.getElementById("peanut-overlay").style.display = "flex";
+    }
+    function closePeanutOverlay() {
+      document.getElementById("peanut-overlay").style.display = "none";
+    }
+    // Optional: click outside image to close
+    document.getElementById("peanut-overlay").addEventListener("click", function(e) {
+      if (e.target === this) closePeanutOverlay();
+    });
+  </script>
+
+</body>
+</html>

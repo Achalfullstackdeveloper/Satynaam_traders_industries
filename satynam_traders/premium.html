@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Peanuts</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .ftco-section {
+      padding: 7em 0;
+      background: #c49b63;
+      color: #1d150b;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .services {
+      text-align: center;
+      padding: 2em;
+      transition: all 0.3s ease-in-out;
+      max-width: 300px;
+    }
+
+    .services:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #3a3a39;
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 20px;
+      overflow: hidden;
+    }
+
+    .icon img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .heading {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .services p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Premium Section -->
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row">
+        <!-- Premium Peanuts -->
+        <div class="services">
+          <div class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/227/227125.png" alt="Premium Peanuts Icon" />
+          </div>
+          <h3 class="heading">🌰 Premium Peanuts</h3>
+          <p>Our Premium Peanuts are handpicked from the finest harvests, ensuring superior taste, texture, and nutrition.</p>
+        </div>
+        <!-- Naturally Nutritious -->
+        <div class="services">
+          <div class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3373/3373025.png" alt="Naturally Nutritious Icon" />
+          </div>
+          <h3 class="heading">🌿 Naturally Nutritious</h3>
+          <p>Our peanuts are a natural source of energy, packed with protein, fiber, and essential vitamins and minerals.</p>
+        </div>
+        <!-- Quality Peanuts -->
+        <div class="services">
+          <div class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/227/227125.png" alt="Quality Peanuts Icon" />
+          </div>
+          <h3 class="heading">🌰 Quality Peanuts</h3>
+          <p>Our peanuts are carefully selected and processed to deliver the best in taste and nutrition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Our Peanuts</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    .about-half {
+      width: 100%;
+      padding: 30px 15px;
+      box-sizing: border-box;
+    }
+
+    .about-half.img-side {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+
+    .about-half .overlap {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+    }
+
+    .heading-section span {
+      font-size: 32px;
+      color: #d4af37;
+      font-style: italic;
+      text-align: left;
+    }
+
+    .heading-section h2 {
+      font-size: 36px;
+      margin: 10px 0 20px;
+    }
+
+    .about-half p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .about-half li {
+      margin-bottom: 5px;
+      list-style: none;
+    }
+
+    @media (min-width: 768px) {
+      .about-half {
+        width: 50%;
+      }
+
+      .about-half.img-side {
+        min-height: auto;
+      }
+
+      .about-section .about-half .overlap {
+        margin-left: -150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="about-section" id="about">
+    <div class="about-half img-side"
+      style="background-image: url('https://thumbs.dreamstime.com/b/burlap-sack-full-shelled-peanuts-loose-pods-surrounding-textile-bag-29944726.jpg');">
+    </div>
+    <div class="about-half">
+      <div class="overlap">
+        <div class="heading-section">
+          <span data-translate="about_discover">Discover</span>
+          <h2 data-translate="about_heading">Shop Timing</h2>
+        </div>
+        <ul
+          style="list-style: none; padding-left: 0; font-size: 1.15rem; line-height: 1.7; color: #ccc; margin-top: 15px;">
+          <li><strong style="color: #fff;" data-translate="about_weekdays_label">Monday to Saturday:</strong> <span
+              data-translate="about_weekdays_time">9:00 AM to 9:00 PM</span></li>
+          <li><strong style="color: #fff;" data-translate="about_sunday_label">Sunday:</strong> <span
+              data-translate="about_sunday_time">Closed</span></li>
+        </ul>
+        <p class="mt-4" style="font-size: 1.15rem;">
+          <span data-translate="about_callus">Call us:</span>
+          <a href="tel:+918788209773"
+            style="color: #0dcaf0; text-decoration: none; font-weight: 600;">
+            +91 8788209773
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
