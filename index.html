@@ -539,19 +539,7 @@
     </div>
   </section>
 
-  <script>
-    function openPeanutOverlay(src) {
-      document.getElementById("peanut-overlay-img").src = src;
-      document.getElementById("peanut-overlay").style.display = "flex";
-    }
-    function closePeanutOverlay() {
-      document.getElementById("peanut-overlay").style.display = "none";
-    }
-    // Optional: click outside image to close
-    document.getElementById("peanut-overlay").addEventListener("click", function(e) {
-      if (e.target === this) closePeanutOverlay();
-    });
-  </script>
+  
   <!-- TESTIMONIAL SECTION -->
   <br><br>
   <div class="black" style="background-color: rgb(16, 16, 16);">
@@ -623,7 +611,8 @@
         </div>
         <!-- Location-->
         <div class="contact-card">
-          <img src="https://cdn.creazilla.com/cliparts/75230/location-icon-clipart-lg.png" alt="Location" />
+        <img src="https://cdn.creazilla.com/cliparts/75230/location-icon-clipart-lg.png" alt="Location">
+
           <h3 data-translate="contact_location_heading">Find Us</h3>
           <a href="https://www.google.com/maps/place/Satynaam+traders+industry/@21.3436875,78.4775625,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd451005f264f85:0xc37c8b5513169c7e!8m2!3d21.3436875!4d78.4775625!16s%2Fg%2F11lf77hz7s?hl=en&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
             data-translate="contact_address">
@@ -703,5 +692,6 @@
   <script src="files/js/homepage.js"></script>
 <script src="files/js/style.js"></script>
 </body>
+
 
 </html>
